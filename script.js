@@ -1,4 +1,4 @@
-const GEMINI_API_KEY = "PASTE_YOUR_FREE_GEMINI_API_KEY_HERE";
+const GEMINI_API_KEY = "AQ.Ab8RN6J1IIR2Ot3M7Ir5Ckxb9oEhlslnAAQrAR6-yPZHaGA0vQ";
 const GEMINI_MODEL = "gemini-2.5-flash";
 
 const homeScreen = document.getElementById("homeScreen");
