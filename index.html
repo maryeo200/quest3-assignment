@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coupang PRO AI Voice Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="phone" aria-label="Coupang PRO class shopping simulation">
+    <section class="screen home-screen is-active" id="homeScreen" aria-label="Shopping home">
+      <header class="home-header">
+        <div>
+          <p class="simulation-kicker">CLASS PROJECT SIMULATION</p>
+          <h1 class="wordmark" aria-label="Coupang PRO">
+            <span>C</span><span>o</span><span>u</span><span>p</span><span>a</span><span>n</span><span>g</span>
+            <strong>PRO</strong>
+          </h1>
+        </div>
+        <div class="notification" aria-hidden="true">
+          <span class="bell">!</span>
+          <b>10</b>
+        </div>
+      </header>
+
+      <div class="search-display" aria-hidden="true">
+        <span class="search-icon"></span>
+        <span>halls xs</span>
+      </div>
+
+      <button class="voice-launcher" id="voiceLauncher" type="button" aria-label="Start AI shopping voice assistant">
+        <span class="microphone-icon" aria-hidden="true">
+          <i class="mic-head"></i>
+          <i class="mic-arm"></i>
+          <i class="mic-stem"></i>
+          <i class="mic-base"></i>
+        </span>
+      </button>
+      <p class="voice-caption">AI Voice Assistant</p>
+
+      <section class="category-strip" aria-label="Shopping category preview">
+        <div><span>Bag</span><b>Frequent</b></div>
+        <div><span>Play</span><b>Coupang Play</b></div>
+        <div><span>Milk</span><b>Rocket Fresh</b></div>
+        <div><span>Eat</span><b>Coupang Eats</b></div>
+        <div><span>Gift</span><b>Gold Box</b></div>
+        <div><span>8h</span><b>Flash Sale</b></div>
+        <div><span>Fit</span><b>Fashion</b></div>
+        <div><span>R.</span><b>R.LUX</b></div>
+        <div><span>Ship</span><b>Rocket Ship</b></div>
+        <div><span>Go</span><b>Global</b></div>
+      </section>
+
+      <section class="sale-banner" aria-label="Fictional discount banner">
+        <div class="sale-products" aria-hidden="true">
+          <span>Soap</span><span>Care</span><span>Wash</span>
+        </div>
+        <div>
+          <small>Monthly Best</small>
+          <strong>Half Price Sale</strong>
+          <b>50%</b>
+        </div>
+        <div class="sale-products" aria-hidden="true">
+          <span>Cream</span><span>Clean</span><span>Box</span>
+        </div>
+      </section>
+
+      <section class="recommend-preview" aria-label="Recommended item preview">
+        <div class="section-title">
+          <h2><span>*</span> Do not miss these items!</h2>
+          <span>More ></span>
+        </div>
+        <div class="preview-products">
+          <article><div>Build</div><p>Pixel build kit</p></article>
+          <article><div>Scent</div><p>Fictional scent set</p></article>
+          <article><div>Desk</div><p>Mini desk set</p></article>
+        </div>
+      </section>
+
+      <nav class="bottom-nav" aria-label="Decorative bottom menu">
+        <span class="selected">Home</span><span>Grid</span><span>Search</span><span>Me</span><span>Cart</span>
+      </nav>
+    </section>
+
+    <section class="screen chat-screen" id="chatScreen" aria-label="AI shopping assistant chat">
+      <header class="sub-header">
+        <button class="icon-button" id="chatBackButton" type="button" aria-label="Go back home">&lt;</button>
+        <div>
+          <h2>AI Voice Assistant</h2>
+          <p><span class="online-dot"></span> Gemini connected</p>
+        </div>
+        <span class="header-spacer"></span>
+      </header>
+
+      <p class="simulation-notice">
+        This is a class project simulation. All products and orders are fictional. No real payment or purchase is made.
+      </p>
+
+      <div class="chat-log" id="chatLog" aria-live="polite">
+        <div class="chat-bubble assistant">
+          Hi. Tell me what you want to buy, your budget, or your delivery preference. I will use AI to recommend fictional shopping options.
+        </div>
+      </div>
+
+      <form class="chat-composer" id="chatForm">
+        <label class="sr-only" for="chatInput">Type a shopping request</label>
+        <input id="chatInput" type="text" placeholder="Example: Find cheap lavender shampoo" autocomplete="off" required>
+        <button id="sendButton" type="submit" aria-label="Send message">Go</button>
+      </form>
+    </section>
+
+    <section class="screen order-screen" id="orderScreen" aria-label="Simulated order confirmation">
+      <header class="sub-header">
+        <button class="icon-button" id="orderBackButton" type="button" aria-label="Go back to chat">&lt;</button>
+        <div>
+          <h2>Order Confirmation</h2>
+          <p>SIMULATED ORDER</p>
+        </div>
+        <span class="header-spacer"></span>
+      </header>
+
+      <div class="order-content">
+        <div class="order-warning">
+          <strong>This is not a real order</strong>
+          <p>No payment, delivery, personal data transfer, or real store connection will happen.</p>
+        </div>
+
+        <section class="order-product">
+          <div class="order-product-art" aria-hidden="true">PRO</div>
+          <div>
+            <small>AI selected fictional product</small>
+            <h3 id="orderProductName">Selected product</h3>
+            <p id="orderProductDescription"></p>
+          </div>
+        </section>
+
+        <dl class="order-details">
+          <div><dt>Price</dt><dd id="orderPrice">-</dd></div>
+          <div><dt>Delivery</dt><dd id="orderDelivery">-</dd></div>
+          <div><dt>Reason</dt><dd id="orderReason">-</dd></div>
+          <div><dt>Payment</dt><dd>Simulation payment</dd></div>
+        </dl>
+
+        <button class="confirm-order" id="confirmOrderButton" type="button">Confirm Simulated Order</button>
+        <button class="return-chat" id="cancelOrderButton" type="button">Return to Chat</button>
+      </div>
+
+      <div class="order-complete" id="orderComplete" hidden>
+        <div class="complete-mark">OK</div>
+        <h2>Simulated Order Complete</h2>
+        <p>No real purchase or payment was made.</p>
+        <button id="restartButton" type="button">Back to Home</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
